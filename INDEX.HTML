@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriFarm - Produits Frais du Bénin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <span class="logo">🌾</span>
+                <span class="brand-name">AgriFarm</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="marketplace.html" class="nav-link">Marketplace</a>
+                <a href="#how-it-works" class="nav-link">Comment ça marche</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </a>
+                <div class="auth-buttons logged-out">
+                    <a href="login.html" class="btn btn-outline">Connexion</a>
+                    <a href="signup.html" class="btn btn-primary">Inscription</a>
+                </div>
+                <div class="user-menu logged-in" style="display: none;">
+                    <span class="user-name"></span>
+                    <button class="btn btn-outline" onclick="logout()">Déconnexion</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Produits Frais du Bénin</h1>
+                <p class="hero-subtitle">Directement des champs à votre table</p>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher des tomates, ananas, agriculteurs..." class="search-input">
+                    <button class="search-btn">🔍 Rechercher</button>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="signup.html?role=farmer" class="btn btn-secondary">Devenir Agriculteur</a>
+                    <a href="marketplace.html" class="btn btn-primary">Commander Maintenant</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">🌱 Image Agriculteur</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="categories section-padding">
+        <div class="container">
+            <h2 class="section-title">Parcourir par Catégorie</h2>
+            <div class="categories-grid">
+                <a href="marketplace.html?category=legumes" class="category-card">
+                    <div class="category-icon">🥕</div>
+                    <h3>Légumes</h3>
+                </a>
+                <a href="marketplace.html?category=fruits" class="category-card">
+                    <div class="category-icon">🍎</div>
+                    <h3>Fruits</h3>
+                </a>
+                <a href="marketplace.html?category=tubercules" class="category-card">
+                    <div class="category-icon">🥔</div>
+                    <h3>Tubercules</h3>
+                </a>
+                <a href="marketplace.html?category=cereales" class="category-card">
+                    <div class="category-icon">🌾</div>
+                    <h3>Céréales</h3>
+                </a>
+                <a href="marketplace.html?category=legumineuses" class="category-card">
+                    <div class="category-icon">🫘</div>
+                    <h3>Légumineuses</h3>
+                </a>
+                <a href="marketplace.html?category=epices" class="category-card">
+                    <div class="category-icon">🌶️</div>
+                    <h3>Épices</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits Vedettes -->
+    <section class="featured-products section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">🔥 Produits du Moment</h2>
+            <div class="products-grid" id="featured-products">
+                <!-- Les produits seront chargés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment ça marche -->
+    <section class="how-it-works section-padding" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Comment Ça Marche ?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Parcourez</h3>
+                    <p>Découvrez les produits frais de nos agriculteurs</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Commandez</h3>
+                    <p>Ajoutez vos produits préférés au panier</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Recevez</h3>
+                    <p>Livraison rapide à votre domicile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AgriFarm 🌾</h3>
+                    <p>La marketplace agricole du Bénin</p>
+                    <p>📍 Cotonou, Bénin</p>
+                    <p>📞 +229 55530826</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens</h4>
+                    <a href="marketplace.html">Marketplace</a>
+                    <a href="#how-it-works">Comment ça marche</a>
+                    <a href="signup.html?role=farmer">Devenir agriculteur</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <a href="#">CGU</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AgriFarm - Powered by ForceConnect</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/utils/helpers.js"></script>
+    <script src="js/utils/auth.js"></script>
+    <script src="js/components/cart.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pages/home.js"></script>
+</body>
+</html>
